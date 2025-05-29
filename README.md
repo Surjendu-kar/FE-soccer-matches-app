@@ -30,6 +30,7 @@ This project uses the [Football-Data.org API](https://www.football-data.org/) to
 
 ### Frontend
 - React.js
+- TypeScript
 - Tailwind CSS (for styling)
 - Vercel (Deployment)
 
