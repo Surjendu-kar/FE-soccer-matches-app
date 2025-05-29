@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Soccer Matches App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that displays upcoming soccer matches using the Football-Data.org API.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+- Frontend: [https://fe-soccer-matches-app.vercel.app/](https://fe-soccer-matches-app.vercel.app/)
+- Backend API: [https://be-soccer-matches-app.vercel.app/](https://be-soccer-matches-app.vercel.app/)
 
-### `npm start`
+## API Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project uses the [Football-Data.org API](https://www.football-data.org/) to fetch soccer match data. The API provides comprehensive football data including:
+- Upcoming matches
+- Team information
+- Match schedules
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Display upcoming soccer matches
+- Show match details including:
+  - Home and away teams
+  - Competition name
+  - Scheduled date and time
+  - Match status
+  - Matchday number
+- Responsive design
+- Real-time data updates
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+### Frontend
+- React.js
+- Tailwind CSS (for styling)
+- Vercel (Deployment)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend
+- Node.js
+- Express.js
+- Football-Data.org API
+- Vercel (Deployment)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API Endpoints
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The backend provides the following endpoints:
 
-### `npm run eject`
+- `GET /api/matches` - Get upcoming matches
+- `GET /api/health` - Health check endpoint
+- `GET /` - API information
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file and add your Football-Data.org API key:
+   ```
+   FOOTBALL_API_KEY=your_api_key_here
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ISC
