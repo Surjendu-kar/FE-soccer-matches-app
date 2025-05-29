@@ -12,7 +12,7 @@ import EmptyState from './components/EmptyState';
 // Types
 import { Match, MatchesResponse } from './types';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 function App() {
   const [matches, setMatches] = useState<Match[]>([]);
